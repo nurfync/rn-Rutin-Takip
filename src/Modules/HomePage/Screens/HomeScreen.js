@@ -108,7 +108,11 @@ const HomeScreen = props => {
         }
     }, [SearchExists])
 
-
+    
+   //sadece, arama çubuğuna harfler girildiğinde filteredItemList güncellemesi tetikleniyor ve
+   //arama yapılan veriyi silme/değiştirme işlemi sonrasında gerçek arama sonuçları gösterilmiyordu
+   //artık masteredItemList değişince de filteredItemList güncellemesi tetiklenecek
+    useEffect(() => {searchFilterFunction(search)}, [masteredItemList])
 
     const _render_Item = ({ item }) => {
         // item'e basıldığında id'sini gönderiyoruz
