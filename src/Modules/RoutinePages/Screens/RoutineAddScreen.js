@@ -6,7 +6,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import moment from 'moment';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { useDispatch, useSelector } from 'react-redux';
-
+//clean this code
 
 import { useThemedColors } from '../../Theming';
 import getStyles from '../styles/RoutuneAddStyles';
